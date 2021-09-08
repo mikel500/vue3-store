@@ -1,0 +1,108 @@
+{
+  "home": {
+    "header_title": "We got your plants <br/><span class='text-gray-200'>And we deliver them for you</span>",
+    "header_content": "Our collection of plants gives you all the natural wonders you ever wanted in your garden, terrace, living room or any space of your liking.",
+    "header_button": "See Collection",
+    "benefits_information": {
+      "benefits_titles": [
+        "Free shipping",
+        "We advise you",
+        "Gift packs"
+      ],
+      "benefits_explanation": [
+        "For purchases over 30€.",
+        "Our team will help you find what you need.",
+        "Have a detail in a quick and easy way."
+      ]
+    },
+    "featured_products": {
+      "title": "Featured Products",
+      "products": [
+        "Orchid",
+        "Dracena",
+        "Begonia"
+      ]
+    },
+    "cta": {
+      "title": "Buy online now and get a 10% discount!",
+      "button": "GO TO SHOP"
+    }
+  },
+  "layout": {
+    "header": {
+      "menu": [
+        "Home",
+        "Store",
+        "Contact"
+      ],
+      "user_menu": [
+        "Your Profile",
+        "Settings",
+        "Sign out"
+      ],
+      "cart": {
+        "title": "Your Cart",
+        "units": "Units",
+        "empty": "No items",
+        "button": "Buy Now"
+      }
+    },
+    "footer": {
+      "terms": "General Terms & Conditions",
+      "data_agreement": "Data Processing Agreement",
+      "privacy_policy": "Privacy Statement",
+      "contact": "Contact",
+      "address": "Sunstreet 85<br>Barcelona<br>Spain",
+      "title_app": "Improve your experience",
+      "download_app": "Dowloand App",
+      "company_rights": "2021 Sunflower. All rights reserved."
+    }
+  },
+  "store": {
+    "button_show": "Show more",
+    "filters": {
+      "filters_title": "Filters",
+      "categories_title": "Categories",
+      "categories": {
+        "indoor": "Indoor plants",
+        "outdoor": "Outdoor plants",
+        "orchard": "Orchard",
+        "seeds": "Seeds"
+      },
+      "price_title": "Price",
+      "reviews_title": "Reviews",
+      "reviews_more": "& up"
+    },
+    "sort": {
+      "title": "Order by:",
+      "lowest_price": "Price: Low to High",
+      "highest_price": "Price: High to Low",
+      "reviews": "Customer Reviews"
+    }
+  },
+  "product": {
+    "button_cart": "Add to cart"
+  },
+  "cart": {
+    "price": "Price",
+    "article": "Article",
+    "units": "Units",
+    "total": "TOTAL PRICE:",
+    "button_buy": "Buy Now",
+    "empty": "The cart is empty, select a product in our store.",
+    "shop_link": "GO TO SHOP"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": "Sunstreet 85<br>Barcelona<br>Spain",
+    "form": {
+      "title": "Send Us A Message",
+      "name": "Full name",
+      "email": "Email address",
+      "subject": "Subject",
+      "details": "Additional Details",
+      "accept_offers": "Email me news and special offers",
+      "button": "Send Message"
+    }
+  }
+}

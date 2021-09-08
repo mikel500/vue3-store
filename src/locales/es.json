@@ -1,0 +1,108 @@
+{
+  "home": {
+    "header_title": "Dale vida a tu hogar,<br/><span class='text-gray-200 text-4xl'>tenemos las plantas ideales para ti</span>",
+    "header_content": "Nuestra colección de plantas te brinda todas las maravillas naturales que siempre quisiste en tu jardín, terraza, salón o cualquier lugar especial.",
+    "header_button": "Ver Colección",
+    "benefits_information": {
+      "benefits_titles": [
+        "Envío Gratis",
+        "Te Asesoramos",
+        "Paquetes Regalo"
+      ],
+      "benefits_explanation": [
+        "A partir de compras superiores a 30€",
+        "Nuestro equipo te ayudará a encontrar lo que necesitas",
+        "Ten un detalle de una forma rápida y sencilla"
+      ]
+    },
+    "featured_products": {
+      "title": "Productos Destacados",
+      "products": [
+        "Orquídea",
+        "Dracena",
+        "Begonia"
+      ]
+    },
+    "cta": {
+      "title": "¡Compra ahora y consigue un 10% de descuento!",
+      "button": "VER TIENDA"
+    }
+  },
+  "layout": {
+    "header": {
+      "menu": [
+        "Inicio",
+        "Productos",
+        "Contacto"
+      ],
+      "user_menu": [
+        "Perfil",
+        "Ajustes",
+        "Desconectar"
+      ],
+      "cart": {
+        "title": "Mi Carrito",
+        "units": "Unidades",
+        "empty": "Sin Artículos",
+        "button": "Comprar"
+      }
+    },
+    "footer": {
+      "terms": "Términos & Condiciones",
+      "data_agreement": "Acuerdo de Procesamiento de Datos",
+      "privacy_policy": "Política de Privacidad",
+      "contact": "Contacto",
+      "address": "C/ Suns 85<br>Barcelona<br>España",
+      "title_app": "Mejora tu experiencia",
+      "download_app": "Descargar App",
+      "company_rights": "2021 Sunflower. Todos los derechos reservados."
+    }
+  },
+  "store": {
+    "button_show": "Mostrar más",
+    "filters": {
+      "filters_title": " Filtros",
+      "categories_title": "Categorías",
+      "categories": {
+        "indoor": "Plantas de interior",
+        "outdoor": "Plantas de exterior",
+        "orchard": "Huerto",
+        "seeds": "Semillas"
+      },
+      "price_title": "Precio",
+      "reviews_title": "Valoraciones",
+      "reviews_more": "o más"
+    },
+    "sort": {
+      "title": "Ordenar por:",
+      "lowest_price": "Precio: Menor a Mayor",
+      "highest_price": "Precio: Mayor a Menor",
+      "reviews": "Valoraciones"
+    }
+  },
+  "product": {
+    "button_cart": "Añadir al carro"
+  },
+  "cart": {
+    "price": "Precio",
+    "article": "Artículos",
+    "units": "Unidades",
+    "total": "PRECIO TOTAL:",
+    "empty": "El carro está vacío, seleccione un producto de la tienda.",
+    "shop_link": "VER TIENDA",
+    "button_buy": "Comprar Ahora"
+  },
+  "contact": {
+    "title": "Contacto",
+    "address": "C/ Suns 85<br>Barcelona<br>España",
+    "form": {
+      "title": "Envíanos un mensaje",
+      "name": "Nombre",
+      "email": "Email",
+      "subject": "Asunto",
+      "details": "Detalles",
+      "accept_offers": "Acepto el envío de noticias y ofertas por email",
+      "button": "Enviar"
+    }
+  }
+}

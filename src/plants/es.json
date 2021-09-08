@@ -1,0 +1,202 @@
+[
+    {
+        "id": 1,
+        "name": "anthurium",
+        "price": 22.95,
+        "category": "indoor",
+        "stars": 3,
+        "img": "anthurium.webp"
+    },
+    {
+        "id": 2,
+        "name": "espatifilo",
+        "price": 20.95,
+        "category": "indoor",
+        "stars": 4,
+        "img": "espatifilo.webp"
+    },
+    {
+        "id": 3,
+        "name": "hortensia",
+        "price": 19.95,
+        "category": "indoor",
+        "stars": 5,
+        "img": "hortensia.webp"
+    },
+    {
+        "id": 4,
+        "name": "cúrcuma",
+        "price": 16.95,
+        "category": "indoor",
+        "stars": 4,
+        "img": "curcuma.webp"
+    },
+    {
+        "id": 5,
+        "name": "orquídea",
+        "price": 14.95,
+        "category": "indoor",
+        "stars": 5,
+        "img": "orquidea.webp"
+    },
+    {
+        "id": 6,
+        "name": "begonia",
+        "price": 22.95,
+        "category": "indoor",
+        "stars": 5,
+        "img": "begonia.webp"
+    },
+    {
+        "id": 7,
+        "name": "guzmania",
+        "price": 4.95,
+        "category": "indoor",
+        "stars": 3,
+        "img": "guzmania.webp"
+    },
+    {
+        "id": 8,
+        "name": "oxalis",
+        "price": 4.95,
+        "category": "indoor",
+        "stars": 0,
+        "img": "oxalis.webp"
+    },
+    {
+        "id": 9,
+        "name": "potho",
+        "price": 19.95,
+        "category": "indoor",
+        "stars": 5,
+        "img": "potho.webp"
+    },
+    {
+        "id": 10,
+        "name": "dracena",
+        "price": 19.95,
+        "category": "indoor",
+        "stars": 5,
+        "img": "dracena.webp"
+    },
+    {
+        "id": 11,
+        "name": "carex testacea",
+        "price": 19.95,
+        "category": "outdoor",
+        "stars": 0,
+        "img": "carex-testacea.webp"
+    },
+    {
+        "id": 12,
+        "name": "wisteria glicinia",
+        "price": 15.95,
+        "category": "outdoor",
+        "stars": 0,
+        "img": "wisteria.webp"
+    },
+    {
+        "id": 13,
+        "name": "solanum jasminoides",
+        "price": 19.95,
+        "category": "outdoor",
+        "stars": 0,
+        "img": "solanum-jasminoides.webp"
+    },
+    {
+        "id": 14,
+        "name": "rosal patiohit",
+        "price": 5.95,
+        "category": "outdoor",
+        "stars": 5,
+        "img": "rosal-patiohit.webp"
+    },
+    {
+        "id": 15,
+        "name": "rosal mini",
+        "price": 4.95,
+        "category": "outdoor",
+        "stars": 5,
+        "img": "rosal-mini.webp"
+    },
+    {
+        "id": 16,
+        "name": "bonsai ficus",
+        "price": 64.95,
+        "category": "indoor",
+        "stars": 5,
+        "img": "bonsai-ficus.webp"
+    },
+    {
+        "id": 17,
+        "name": "fresa",
+        "price": 2.95,
+        "category": "orchard",
+        "stars": 5,
+        "img": "fresa.webp"
+    },
+    {
+        "id": 18,
+        "name": "perejil",
+        "price": 1.95,
+        "category": "orchard",
+        "stars": 4,
+        "img": "perejil.webp"
+    },
+    {
+        "id": 19,
+        "name": "rúcula",
+        "price": 1.95,
+        "category": "orchard",
+        "stars": 5,
+        "img": "rucula.webp"
+    },
+    {
+        "id": 20,
+        "name": "semilla calabacín",
+        "price": 2.95,
+        "category": "seeds",
+        "stars": 5,
+        "img": "semilla-calabacin.webp"
+    },
+    {
+        "id": 21,
+        "name": "semilla fresones",
+        "price": 2.95,
+        "category": "seeds",
+        "stars": 5,
+        "img": "semilla-fresones.webp"
+    },
+    {
+        "id": 22,
+        "name": "semilla pimientos",
+        "price": 3.95,
+        "category": "seeds",
+        "stars": 5,
+        "img": "semilla-pimientos.webp"
+    },
+    {
+        "id": 23,
+        "name": "orquídea multiflora",
+        "price": 73,
+        "category": "indoor",
+        "stars": 5,
+        "img": "orquidea-multi.webp"
+    },
+    {
+        "id": 24,
+        "name": "naranjo",
+        "price": 95,
+        "category": "outdoor",
+        "stars": 5,
+        "img": "naranjo.webp"
+    },
+    {
+        "id": 25,
+        "name": "limonero",
+        "price": 87.25,
+        "category": "outdoor",
+        "stars": 2,
+        "img": "limonero.webp"
+    }
+]
