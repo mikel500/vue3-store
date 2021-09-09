@@ -29,7 +29,7 @@
         </div>
       </div>
     </section>
-    <section class="container mx-auto py-10 sm:py-20 lg:px-5">
+    <section class="container mx-auto py-10 sm:py-20 px-5">
       <div class="grid grid-cols-1 lg:grid-cols-3 justify-items-center">
         <div class="lg:flex lg:items-center text-center lg:text-left">
           <img
