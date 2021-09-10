@@ -1,34 +1,43 @@
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 const items = ref([])
 
 export default () => {
   const addToCart = (item, quantity = 1) => {
-    const checkIteminCart = items.value.find(i => i.id === item.id)
-    if (checkIteminCart !== undefined) {
-      (quantity === 1) ? checkIteminCart.quantity++ : checkIteminCart.quantity += parseInt(quantity)
-    } else {
-      const cartItem = { ...item, quantity: 1 }
-      items.value.push(cartItem)
+    if (quantity) {
+      let checkItemInCart = items.value.find((i) => i.id === item.id)
+      if (checkItemInCart !== undefined) {
+        if (checkItemInCart.quantity === 1) {
+          checkItemInCart.quantity++
+        } else {
+          checkItemInCart.quantity =
+            checkItemInCart.quantity + parseInt(quantity)
+        }
+      } else {
+        const cartItem = { ...item, quantity: parseInt(quantity) }
+        items.value.push(cartItem)
+      }
     }
   }
   const deleteItem = (id) => {
-    const checkIteminCart = items.value.find(i => i.id === id)
+    const checkIteminCart = items.value.find((i) => i.id === id)
     if (checkIteminCart !== undefined) {
       checkIteminCart.quantity = 0
       for (const [index, value] of items.value.entries()) {
         if (value.quantity == 0) {
-          items.value.splice(index, 1);
+          items.value.splice(index, 1)
         }
       }
     }
   }
   const getQuantity = () => {
     let quantity = 0
-    items.value.forEach(item => {
+    items.value.forEach((item) => {
       quantity += parseInt(item.quantity)
     })
-
+    if (isNaN(quantity)) {
+      return 0
+    }
     return quantity
   }
   const getQuantityPerPrice = (quantity, price) => {
@@ -49,6 +58,6 @@ export default () => {
     deleteItem,
     getQuantity,
     getQuantityPerPrice,
-    getTotal
+    getTotal,
   }
 }

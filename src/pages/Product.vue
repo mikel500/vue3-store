@@ -46,10 +46,11 @@
           <p class="text-gray-700 text-base py-2"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis repellat magnam ipsa magni reiciendis quos, eius cupiditate sunt. Vitae eligendi quibusdam asperiores quis officia modi dicta voluptatem et optio a. </p>
         </div>
         <input
-          v-model="itemQuantity"
           class="w-16 h-10 border-gray-300 border-2 text-center mr-14"
           type="number"
+          min="1"
           max="100"
+          v-model="itemQuantity"
         />
         <button
           class="bg-green-500 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-full"
@@ -65,8 +66,8 @@
 </template>
 
 <script>
-
 import useFetchProduct from '@/composable/useFetchProduct.js';
+import { watch } from 'vue'
 
 export default {
   name: 'Product',
@@ -77,11 +78,19 @@ export default {
       itemQuantity,
       addToCart
     } = useFetchProduct();
+
+    watch(itemQuantity, (newValue) => {
+      if (newValue !== "") {
+        const inputCleaned = newValue.replace(/[^0-9]/g, '')
+        itemQuantity.value = (inputCleaned) ? inputCleaned : 0
+      }
+    })
+
     return {
       getOutlineStar,
       productData,
       itemQuantity,
-      addToCart
+      addToCart,
     }
   }
 }
