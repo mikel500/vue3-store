@@ -1,7 +1,7 @@
 <template>
   <div id="home">
-    <section class="h-screen flex justify-center rounded-bottom md:h-screen-70 home-background">
-      <div class="container flex text-center xl:text-left xl:pl-40 px:5 md:px-0">
+    <section class="h-screen flex justify-center rounded-bottom md:h-screen-50 lg:h-screen-70 home-background">
+      <div class="container flex text-center xl:text-left xl:pl-40 px:5 md:px-0 md:py-36 lg:py-0">
         <div class="md:pb-20 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2">
           <div class="place-self-center">
             <h1
@@ -86,8 +86,8 @@ export default {
 <style>
 @media (max-width: 1023px) {
   .home-background {
-    background: #2aaa8a url("../../public/space-with-plants.webp") no-repeat
-      center;
+    background: rgb(52, 175, 110)
+      url("../../public/space-with-plants-touch.webp") no-repeat center;
     background-size: cover;
     background-blend-mode: soft-light;
   }
