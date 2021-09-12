@@ -6,6 +6,9 @@
   @variants responsive {
     .h-screen-70 {
       height: 70vh;
+    },
+    .h-screen-50 {
+      height: 50vh;
     }
   }
 }
