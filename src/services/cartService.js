@@ -1,21 +1,32 @@
 import { ref } from 'vue'
+import i18n from '../i18n'
+import notificationService from './notificationService'
 
 const items = ref([])
 
 export default () => {
+  const { storedArticleMessage } = notificationService()
+
   const addToCart = (item, quantity = 1) => {
-    if (quantity) {
+    if (quantity && quantity !== '0') {
+      const parsedQuantity = parseInt(quantity)
       let checkItemInCart = items.value.find((i) => i.id === item.id)
       if (checkItemInCart !== undefined) {
-        if (checkItemInCart.quantity === 1) {
+        if (parsedQuantity === 1) {
           checkItemInCart.quantity++
+          storedArticleMessage(i18n.global.t('store.product_added'))
         } else {
-          checkItemInCart.quantity =
-            checkItemInCart.quantity + parseInt(quantity)
+          checkItemInCart.quantity = checkItemInCart.quantity + parsedQuantity
+          storedArticleMessage(quantity + i18n.global.t('store.products_added'))
         }
       } else {
-        const cartItem = { ...item, quantity: parseInt(quantity) }
+        const cartItem = { ...item, quantity: parsedQuantity }
         items.value.push(cartItem)
+        quantity === 1
+          ? storedArticleMessage(i18n.global.t('store.product_added'))
+          : storedArticleMessage(
+              parsedQuantity + i18n.global.t('store.products_added'),
+            )
       }
     }
   }

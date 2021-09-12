@@ -1,23 +1,20 @@
-import { ref, watch } from 'vue';
-import { readonly } from '@vue/reactivity';
-import getLanguage from '@/services/languageService.js';
-import getFilters from '@/services/filterService.js';
-import getSortService from '@/services/sortService.js';
-
+import { ref, watch } from 'vue'
+import { readonly } from '@vue/reactivity'
+import getLanguage from '@/services/languageService.js'
+import getFilters from '@/services/filterService.js'
+import getSortService from '@/services/sortService.js'
 
 export default () => {
-  const categories = ref([
-    { name: "indoor", status: false },
-    { name: "outdoor", status: false },
-    { name: "orchard", status: false },
-    { name: "seeds", status: false }
-  ])
-  const price = ref(100)
-  const stars = ref(null)
-  const sort = ref('lowest-price')
   const { language } = getLanguage()
-  const { filterByCategory, filterByPrice, filterByReviews } = getFilters()
-  const { sortStore } = getSortService()
+  const {
+    filterByCategory,
+    filterByPrice,
+    filterByReviews,
+    stars,
+    categories,
+    price,
+  } = getFilters()
+  const { sort, sortStore } = getSortService()
   const plants = ref(require(`../plants/${language.value}.json`))
   const filteredPlants = ref([...plants.value])
   filteredPlants.value.sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
@@ -25,8 +22,7 @@ export default () => {
 
   watch(language, (newValue) => {
     plants.value = require(`../plants/${newValue}.json`)
-    filteredPlants.value = [...plants.value]
-    visiblePlants.value = filteredPlants.value.splice(0, 8)
+    getFilteredItems()
   })
   watch(price, () => {
     getFilteredItems()
@@ -60,24 +56,28 @@ export default () => {
 
   const cleanFilters = (filters) => {
     switch (filters) {
-      case "all":
+      case 'all':
         price.value = 100
         stars.value = null
-        categories.value.forEach((category) => { return category.status = false })
+        categories.value.forEach((category) => {
+          return (category.status = false)
+        })
         getFilteredItems()
-        break;
-      case "categories":
-        categories.value.forEach((category) => { return category.status = false })
+        break
+      case 'categories':
+        categories.value.forEach((category) => {
+          return (category.status = false)
+        })
         getFilteredItems()
-        break;
-      case "price":
+        break
+      case 'price':
         visiblePlants.value = []
         price.value = 100
-        break;
-      case "reviews":
-        stars.value = null;
+        break
+      case 'reviews':
+        stars.value = null
         getFilteredItems()
-        break;
+        break
     }
   }
 
@@ -90,6 +90,6 @@ export default () => {
     sort,
     getFilteredItems,
     showMoreItems,
-    cleanFilters
+    cleanFilters,
   }
 }

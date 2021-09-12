@@ -1,5 +1,19 @@
+import { ref } from 'vue'
+
+const stars = ref(null)
+const categories = ref([
+  { name: 'indoor', status: false },
+  { name: 'outdoor', status: false },
+  { name: 'orchard', status: false },
+  { name: 'seeds', status: false },
+])
+const price = ref(100)
+
 export default () => {
-  const getCheckedCategoriesName = (categories) => categories.filter((category) => category.status).map((category) => category.name)
+  const getCheckedCategoriesName = (categories) =>
+    categories
+      .filter((category) => category.status)
+      .map((category) => category.name)
 
   const filterByCategory = (items, categories) => {
     const checkedCategories = getCheckedCategoriesName(categories)
@@ -10,7 +24,8 @@ export default () => {
     }
   }
 
-  const filterByPrice = (items, price) => items.filter((plant) => plant.price <= price)
+  const filterByPrice = (items, price) =>
+    items.filter((plant) => plant.price <= price)
 
   const filterByReviews = (items, stars) => {
     if (stars !== null) {
@@ -21,8 +36,11 @@ export default () => {
   }
 
   return {
+    stars,
+    categories,
+    price,
     filterByCategory,
     filterByPrice,
-    filterByReviews
+    filterByReviews,
   }
 }
