@@ -67,7 +67,7 @@ export default {
       getQuantityPerPrice,
       getTotal,
       getQuantity
-    } = useCart();
+    } = useCart()
     return {
       items,
       getQuantityPerPrice,
