@@ -60,6 +60,9 @@
   },
   "store": {
     "button_show": "Mostrar más",
+    "button_show_selection": "Mostrar Selección",
+    "product_added": "Artículo añadido",
+    "products_added": " artículos se han añadido",
     "filters": {
       "filters_title": " Filtros",
       "categories_title": "Categorías",

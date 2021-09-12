@@ -60,6 +60,9 @@
   },
   "store": {
     "button_show": "Show more",
+    "button_show_selection": "See Products",
+    "product_added": "Product has been added.",
+    "products_added": " products has been added",
     "filters": {
       "filters_title": "Filters",
       "categories_title": "Categories",
