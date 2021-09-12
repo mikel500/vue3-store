@@ -71,6 +71,12 @@
               @reviewsFilterUpdated="getFilteredItems"
               @cleanReviewsFilter="cleanFilters"
             />
+            <button
+              class="bg-green-500 hover:bg-green-700 text-white font-bold py-4 px-8 rounded mt-3"
+              @click="filterModalIsActive=!filterModalIsActive"
+            >
+              {{$t('store.button_show_selection')}}
+            </button>
           </div>
         </div>
         <button
