@@ -56,9 +56,7 @@ export default {
     item: { type: Object, required: true }
   },
   setup () {
-    const getOutlinedStar = (n) => {
-      return 5 - n
-    }
+    const getOutlinedStar = (n) => 5 - n
     const { addToCart } = useCart();
 
     return {
